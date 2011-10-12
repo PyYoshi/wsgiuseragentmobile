@@ -11,3 +11,9 @@ http://search.cpan.org/~kurihara/HTTP-MobileAgent-0.26/lib/HTTP/MobileAgent.pm
 PEAR::Net_UserAgent_Mobile
 http://pear.php.net/package/Net_UserAgent_Mobile
 
+
+Required: python-lxml
+Ubuntu
+	sudo apt-get install python-lxml
+Windows
+	http://www.lfd.uci.edu/~gohlke/pythonlibs/

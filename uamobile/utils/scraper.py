@@ -22,7 +22,8 @@ class CIDR(object):
 
 
 class DoCoMoCIDR(CIDR):
-    url = 'http://www.nttdocomo.co.jp/service/imode/make/content/ip/'
+    #url = 'http://www.nttdocomo.co.jp/service/imode/make/content/ip/'
+    url = 'http://www.nttdocomo.co.jp/service/developer/make/content/ip/'
 
     def do_scrape(self, doc):
         return [x.text for x in doc.xpath('//div[@class="boxArea" and count(preceding-sibling::*)=2]/div/div[@class="section"]/ul[@class="normal txt" and position()=1]/li')]
@@ -51,8 +52,8 @@ class SoftBankCIDR(CIDR):
 
 
 class WILLCOMCIDR(CIDR):
-    url = 'http://www.willcom-inc.com/ja/service/contents_service/create/center_info/index.html'
-
+    #url = 'http://www.willcom-inc.com/ja/service/contents_service/create/center_info/index.html'
+    url = 'http://creation.mb.softbank.jp/mc/tech/tech_web/web_ipaddress.html'
     def do_scrape(self, doc):
         res = []
         sep = 0
